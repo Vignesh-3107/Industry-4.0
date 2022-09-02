@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./index.css" >
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="./index.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <title>Eye of Hawk</title>
+    <style>
+        p.h3 { text-indent:2.5%;}
+        p.para{text-indent:7.5%;margin-left: 2.5%;}
+    </style>
+   
+</head>
+<body onload="visitLoading()"><div class="container">
+    <div class="header">
+    <img src="./Images/EyeOfHawk.png" alt="Eye Of Hawk" height="100px" width="100px" title="Eye of Hawk" style="float:left;" ></img>
+    <h2 class="h2">Eye of Hawk</h2>
+    </div>
+    <div>
+    <h3 class="h3" style="font-size:30px;color:red;">Industry 4.0</h3>
+    <div class="container main">
+    <div class="container left" style="height:53vmax;width:100%;background-color: rgba(156, 156, 156, 0.455) ;">
+         <img class="img rounded-circle bg-white imgclass" src="./Images/AuthorProfile.png" alt="Author Image " title="Author" height="110px" width="110px"></img>
+        <br><br>
+         <h4 class="h4" style="text-indent:10%;">Vignesh Chinnasamy</h4>
+        <h6 class="h6" style="text-indent:10%;">@Viknesh7013</h6>
+        <br>
+        <button class="btn btn-primary btn-lg " onclick="followers()" style="margin-left:27%;"><span id="Followbtn">Follow </span>&nbsp;<i class="fa-solid fa-user-plus"></i></button>
+        <ul class="nav social" style="margin-left:20%;">
+            <li class="nav-item"><a class="nav-link" href=""><i class="fa-brands fa-facebook con" style="color:blue;"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/vignesh-chinnasamy/"><i class="fab fa-linkedin-in"  style="color:blue;"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href=""><i class="fab fa-google con"  style="color:red;"></i></a></li>
+            </ul>
+            <br>
+        <hr>
+        <p style="text-indent:20%;"><i class="fa-solid fa-notes-medical" style="margin-right:5%;"></i> <span class="h5" style="text-indent:5%;">Posts </span> &nbsp; - &nbsp;  <b>310</b> </p>
+        <p style="text-indent:20%;"><i class="fa-solid fa-users" style="margin-right:5%;"></i> <span class="h5" style="text-indent:5%;">Followers </span> &nbsp; - &nbsp;  <b id="follower">489</b> </p>
+        <p style="text-indent:20%;"><i class="fa-solid fa-user-plus" style="margin-right:5%;"></i> <span class="h5" style="text-indent:5%;">Following </span> &nbsp; - &nbsp;  <b>83</b> </p>
+        <p style="text-indent:20%;"><i class="fa-regular fa-thumbs-up" style="margin-right:5%;"></i> <span class="h5" style="text-indent:5%;">Likes </span> &nbsp; - &nbsp;  <b>533</b> </p>
+        <p style="text-indent:20%;"><i class="fa-regular fa-thumbs-down" style="margin-right:5%;"></i> <span class="h5" style="text-indent:5%;">Dislikes </span> &nbsp; - &nbsp;  <b>15</b> </p>
+
+        <br>
+        <hr>
+        <p class="h6" style="text-align:center;font-size:16px;"><i class="fa-regular fa-copyright"></i> Eye of Hawk .</p><br>
+        <button class="btn btn-primary disabled" style="margin-left:20%"> Total Visitor  - &nbsp; <span id="visit"> </span></button>
+    </div>
+    <div class="container right" style="height:50vmax;width:100%;">
+    
+       <ul class="nav navi">
+        <li class="nav-item"> <a class="nav-link" href="./index.html">Home </a></li>
+        <li class="nav-item"> <a class="nav-link" href="./Industry4.0.html">Technology </a></li>
+        <li class="nav-item"> <a class="nav-link" href="./Evolution.html">Evolution </a></li>
+        <li class="nav-item"> <a class="nav-link" href="./Trends.html">Trends </a></li>
+        <li class="nav-item"> <a class="nav-link" href="./FAQs.html">FAQs </a></li>
+       </ul>
+       <br>
+       <p class="h3">Top Industry 4.0 Trends in 2022 </p>
+       <p class="para">Industries are reformed in a way that was nowhere seen in history, with new Industry 4.0 manufacturing methods. Every reform is so powerful that these are ruling the present industry now and would be omnipresent in the future. 
+        Here are a few trends and marvelous Industry 4. 0 technologies that would define the golden future of Industry 4.0:</p>
+        <img src="./Images/Trends.png" alt="Industrial 4.0" width="60%" height="auto" style="margin-left:25%;" /> 
+        <div style="margin-left:25%;border:1px solid black;margin-right:25%;border-radius: 5px;"><br>
+<p class="h5" style="color:black;font-size:18px;margin-left:5%;">
+
+           Table of Contents
+        <ol class="list" style="margin-left:7%;">
+            <li><a href="#1">Big Data and AI analytics</a></li>
+            <li><a href="#2">Horizontal and vertical integration</a></li>
+            <li><a href="#3">Cloud computing</a></li>
+            <li><a href="#4">Augmented reality (AR)</a></li>
+            <li><a href="#5">Industrial Internet of Things (IIoT)</a></li>
+            <li><a href="#6">Additive manufacturing/3D printing</a></li>
+            <li><a href="#7">Autonomous robots</a></li>
+            <li><a href="#8">Simulation/digital twins</a></li>
+            <li><a href="#9">Cybersecurity</a></li>
+            <li><a href="#10">Human Machine Interfaces (HMI)</a></li>
+        </ol>
+
+    </p>
+        </div>
+        <br>
+       <p class="h3" id="1">Big Data and AI analytics</p><br>
+       <img src="./Images/big data.jpg" alt="Industrial 4.0" width="50%" height="auto" style="margin-left:25%;" /> <br><br>
+       <p class="para">  In Industry 4.0, Big Data is collected from a wide range of sources, from factory equipment and Internet of Things (IoT) devices, to ERP and CRM systems, to weather and traffic apps.
+         Analytics powered by artificial intelligence (AI) and machine learning are applied to the data in real time – and insights are leveraged to improve decision-making and automation in every area of supply chain management: supply chain planning, logistics management, 
+         manufacturing, R&D and engineering, enterprise asset management (EAM), and procurement.</p>
+       <p class="h3"id="2" >Horizontal and vertical integration</p>
+       <p class="para">The backbone of Industry 4.0 is horizontal and vertical integration. With horizontal integration, processes are tightly integrated at the “field level” – on the production floor, across multiple production facilities, and across the entire supply chain. With vertical integration, all the layers of an organization are tied together – and data flows freely from the shop floor to the top floor and back down again. 
+        In other words, production is tightly integrated with business processes like R&D, quality assurance, sales and marketing, and other departments – and data and knowledge silos are a thing of the past.  </p>
+       <p class="h3" id="3">Cloud computing</p>
+       <img src="./Images/cloud computing.jpg" alt="Industrial 4.0" width="40%" height="auto" style="margin-left:25%;" /> <br><br>
+       <p class="para">Cloud computing is the “great enabler” of Industry 4.0 and digital transformation. 
+        Today’s cloud technology goes way beyond speed, scalability, storage, and cost efficiencies. It provides the foundation for most advanced technologies – from AI and machine learning to the Internet of Things – and gives businesses the means to innovate. The data that fuels Industry 4.0 technologies resides in the cloud, and the cyber-physical systems at the core of Industry 
+        4.0 use the cloud to communicate and coordinate.  </p>
+       <p class="h3" id="4">Augmented reality (AR)</p><br>
+       <img src="./Images/AR.jpg" alt="Industrial 4.0" width="35%" height="auto" style="margin-left:30%;" /> <br><br>
+       <p class="para">Augmented reality, which overlays digital content on a real environment, is a core concept of Industry 4.0. 
+        With an AR system, employees use smart glasses or mobile devices to visualize real-time IoT data, digitized parts, repair or assembly instructions, training content, and more when looking at a physical thing – like a piece of equipment or a product. 
+        AR is still emerging but has major implications for maintenance, service, and quality assurance as well as technician training and safety. </p>
+       <p class="h3" id="5">Industrial Internet of Things (IIoT)</p>
+       <img src="./Images/iot.png" alt="Industrial 4.0" width="50%" height="auto" style="margin-left:25%;" /> 
+       <p class="para"> The Internet of Things (IoT) – more specifically, the Industrial Internet of Things – is so central to Industry 4.0 that the two terms are often used interchangeably.
+         Most physical things in Industry 4.0 – devices, robots, machinery, equipment, products – use sensors and RFID tags to provide real-time data about their condition, performance, or location.
+         This technology lets companies run smoother supply chains, rapidly design and modify products, prevent equipment downtime, stay on top of consumer preferences, track products and inventory, and much more. </p>
+       <p class="h3" id="6">Additive manufacturing/3D printing</p><br>
+       <img src="./Images/Additive manufacture.png" alt="Industrial 4.0" width="40%" height="auto" style="margin-left:30%;" /> <br><br>
+       <p class="para"> Additive manufacturing, or 3D printing, is another key technology driving Industry 4.0. 3D printing was initially used to as a rapid prototyping tool but now offers a broader range of applications, from mass customization to distributed manufacturing.
+        With 3D printing, for example, parts and products can be stored as design files in virtual inventories and printed on demand at the point of need – reducing both transportation distances and costs.  </p>
+       <p class="h3" id="7">Autonomous robots</p>
+       <img src="./Images/robot.png" alt="Industrial 4.0" width="35%" height="auto" style="margin-left:25%;" /> 
+       <p class="para"> With Industry 4.0, a new generation of autonomous robots is emerging. Programmed to perform tasks with minimal human intervention, autonomous robots vary greatly in size and function, from inventory scanning drones to autonomous mobile robots for pick and place operations.
+         Equipped with cutting-edge software, AI, sensors, and machine vision, these robots are capable of performing difficult and delicate tasks – and can recognize, analyze, and act on information they receive from their surroundings.</p>
+       <p class="h3" id="8">Simulation/digital twins</p>
+       <p class="para">A digital twin is a virtual simulation of a real-world machine, product, process, or system based on IoT sensor data. This core component of Industry 4.0 allows businesses to better understand, analyze, and improve the performance and maintenance of industrial systems and products. 
+        An asset operator, for example, can use a digital twin to identify a specific malfunctioning part, predict potential issues, and improve uptime. </p>
+       <p class="h3" id="9">Cybersecurity</p><br>
+       <img src="./Images/Cyber Security.jpg" alt="Industrial 4.0" width="50%" height="auto" style="margin-left:25%;"></img> <br><br>
+       <p class="para"> With the increased connectivity and use of Big Data in Industry 4.0, effective cybersecurity is paramount. 
+        By implementing a Zero Trust architecture and technologies like machine learning and blockchain, companies can automate threat detection, prevention, and response – and minimize the risk of data breaches and production delays across their networks.</p>
+       <p class="h3" id="10">Human Machine Interfaces (HMI)</p><br>
+       <img src="./Images/HMI.png" alt="Industrial 4.0" width="40%" height="auto" style="margin-left:25%;" /> 
+       <p class="para">In historic, industrial settings, humans controlled systems and quality control of a process that started and ended with humans. 
+        Industry 4.0, however, demands less work from humans and more work from machines, the caveat being that humans can intervene with the machine to understand, interact with, and alter the automated systems that run it. As a result, human-machine-interface systems have become an integral part of Industry 4.0. HMIs come in many forms, with complexities ranging from control rooms akin to mission control, to small displays that show small amounts of information for a very specific single process. 
+        Regardless of the breadth of technology, HMI is a critical part of Industry 4.0; it's the communication bridge between creator and creation.</p>
+     
+    </div>
+    </div></div>
+  
+</div>
+
+</body>
+</html>

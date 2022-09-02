@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./index.css" >
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="./index.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <title>Eye of Hawk</title>
+   
+</head>
+<body onload="visitLoading()"><div class="container">
+    <div class="header">
+    <img src="./Images/EyeOfHawk.png" alt="Eye Of Hawk" height="100px" width="100px" title="Eye of Hawk" style="float:left;" ></img>
+    <h2 class="h2">Eye of Hawk</h2>
+    </div>
+    <div>
+    <h3 class="h3" style="font-size:30px;color:red;">Industry 4.0</h3>
+    <div class="container main">
+    <div class="container left" style="height:53vmax;width:100%;background-color: rgba(156, 156, 156, 0.455) ;">
+         <img class="img rounded-circle bg-white imgclass" src="./Images/AuthorProfile.png" alt="Author Image " title="Author" height="110px" width="110px"></img>
+        <br><br>
+         <h4 class="h4" style="text-indent:10%;">Vignesh Chinnasamy</h4>
+        <h6 class="h6" style="text-indent:10%;">@Viknesh7013</h6>
+        <br>
+        <button class="btn btn-primary btn-lg " onclick="followers()" style="margin-left:27%;"><span id="Followbtn">Follow </span>&nbsp;<i class="fa-solid fa-user-plus"></i></button>
+        <ul class="nav social" style="margin-left:20%;">
+            <li class="nav-item"><a class="nav-link" href=""><i class="fa-brands fa-facebook con" style="color:blue;"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/vignesh-chinnasamy/"><i class="fab fa-linkedin-in"  style="color:blue;"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href=""><i class="fab fa-google con"  style="color:red;"></i></a></li>
+            </ul>
+            <br>
+        <hr>
+        <p style="text-indent:20%;"><i class="fa-solid fa-notes-medical" style="margin-right:5%;"></i> <span class="h5" style="text-indent:5%;">Posts </span> &nbsp; - &nbsp;  <b>310</b> </p>
+        <p style="text-indent:20%;"><i class="fa-solid fa-users" style="margin-right:5%;"></i> <span class="h5" style="text-indent:5%;">Followers </span> &nbsp; - &nbsp;  <b id="follower">489</b> </p>
+        <p style="text-indent:20%;"><i class="fa-solid fa-user-plus" style="margin-right:5%;"></i> <span class="h5" style="text-indent:5%;">Following </span> &nbsp; - &nbsp;  <b>83</b> </p>
+        <p style="text-indent:20%;"><i class="fa-regular fa-thumbs-up" style="margin-right:5%;"></i> <span class="h5" style="text-indent:5%;">Likes </span> &nbsp; - &nbsp;  <b>533</b> </p>
+        <p style="text-indent:20%;"><i class="fa-regular fa-thumbs-down" style="margin-right:5%;"></i> <span class="h5" style="text-indent:5%;">Dislikes </span> &nbsp; - &nbsp;  <b>15</b> </p>
+
+        <br>
+        <hr>
+        <p class="h6" style="text-align:center;font-size:16px;"><i class="fa-regular fa-copyright"></i> Eye of Hawk .</p><br>
+        <button class="btn btn-primary disabled" style="margin-left:20%"> Total Visitor  - &nbsp; <span id="visit"> </span></button>
+    </div>
+    <div class="container right" style="height:50vmax;width:100%;">
+    
+       <ul class="nav navi">
+        <li class="nav-item"> <a class="nav-link" href="./index.html">Home </a></li>
+        <li class="nav-item"> <a class="nav-link" href="./Industry4.0.html">Technology </a></li>
+        <li class="nav-item"> <a class="nav-link" href="./Evolution.html">Evolution </a></li>
+        <li class="nav-item"> <a class="nav-link" href="./Trends.html">Trends </a></li>
+        <li class="nav-item"> <a class="nav-link" href="./FAQs.html">FAQs </a></li>
+       </ul>
+       
+       <p class="h3" style="text-indent:2.5%;">The History Behind Industry 4.0</p>
+       <img src="./Images/I4.0Evoluation.jpg" alt="Industry 4.0" width="75%" height="auto" style="margin-left:15%;"></img>
+       <p class="h3" style="text-indent:2.5%;">The industrial revolution in the digital era</p>
+       <p style="text-indent:7.5%;margin-left: 2.5%;">
+        "We are shifting from scale to the goal": the fourth industrial revolution is defined by this sentence and represents a radical change for companies. 
+        The attention is no longer directed towards the mass of consumers, but rather to the individual buyer, who determines the dynamics of production with his choices.
+        Industry 4.0 is based on the technologies behind digital manufacturing, which must be adopted by companies in order to obtain all the advantages of this phenomenon.
+        Let's remember, for example, digital technologies, Internet of Things (IoT), Big Data, Cloud Computing and Robotics.
+       </p>
+       <br>
+       <p class="h3" style="text-indent:2.5%;">The First Industrial Revolution</p>
+       <p style="text-indent:7.5%;margin-left: 2.5%;">
+        The industrial revolution in Britain came in to introduce machines into production by the end of the 18th century (1760-1840). 
+        This included going from manual production to the use of steam-powered engines and water as a source of power.
+        This  helped agriculture greatly and the term “factory” became a little popular. 
+        One of the industries that benefited a lot from such changes is the textile industry, and was the first to adopt such methods. 
+        It also constituted a huge part of the British economy at the time.
+       </p><br>
+       <p class="h3" style="text-indent:2.5%;">The Second Industrial Revolution</p>
+       <p style="text-indent:7.5%;margin-left: 2.5%;">
+        The second one dates between 1870 and 1914 (although some of its characteristics date back to the 1850) and introduced pre-existing systems such as telegraphs and railroads into industries. 
+        Perhaps the defining characteristic of that period was the introduction of mass production as a primary means to production in general.
+       </p>
+       <p style="text-indent:7.5%;margin-left: 2.5%;">
+        The electrification of factories contributed hugely to production rates. 
+        The mass production of steel helped introduce railways into the system, which consequently contributed to mass production. 
+        Innovations in chemistry, such as the invention of the synthetic dye, also mark such period as chemistry was in a rather primitive state then.
+       </p>
+       <p style="text-indent:7.5%;margin-left: 2.5%;">
+        However, such revolutionary approaches to industry were put to an end with the start of World War I.
+         Mass production, of course, was not put to an end, but only developments within the same context were made and none of which can be called industrial revolutions.
+       </p>
+       <p class="h3" style="text-indent:2.5%;">The Third Industrial Revolution</p>
+       <p style="text-indent:7.5%;margin-left: 2.5%;">
+        Perhaps the third one is much more familiar to us than the rest as most people living today are familiar with industries leaning on digital technologies in production.
+         However, the third industrial revolution is dated between 1950 and 1970.
+       </p>
+       <p style="text-indent:7.5%;margin-left: 2.5%;">
+        It is often referred to as the Digital Revolution, and came about the change from analog and mechanical systems to digital ones.
+        Others call it the Information Age too. The third revolution was, and still is, a direct result of the huge development in computers and information and communication technology.
+       </p>
+       <p class="h3" style="text-indent:2.5%;">The Fourth Industrial Revolution</p>
+       <p style="text-indent:7.5%;margin-left: 2.5%;">
+        The fourth industrial revolution takes the automation of manufacturing processes to a new level by introducing customized and flexible mass production technologies.
+        This means that machines will operate independently, or cooperate with humans in creating a customer-oriented production field that constantly works on maintaining itself. 
+        The machine rather becomes an independent entity that is able to collect data, analyze it, and advise upon it.
+       </p >
+       <p style="text-indent:7.5%;margin-left: 2.5%;">
+       This becomes possible by introducing self-optimization, self-cognition, and self-customization into the industry. 
+       The manufacturers will be able to communicate with computers rather than operate them.
+       </p>
+    </div>
+   
+    </div></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./index.css" >
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="./index.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <title>Eye of Hawk</title>
+   
+</head>
+<body onload="visitLoading()"><div class="container">
+    <div class="header">
+    <img src="./Images/EyeOfHawk.png" alt="Eye Of Hawk" height="100px" width="100px" title="Eye of Hawk" style="float:left;" ></img>
+    <h2 class="h2">Eye of Hawk</h2>
+    </div>
+    <div>
+    <h3 class="h3" style="font-size:30px;color:red;">Industry 4.0</h3>
+    <div class="container main">
+    <div class="container left" style="height:53vmax;width:100%;background-color: rgba(156, 156, 156, 0.455) ;">
+         <img class="img rounded-circle bg-white imgclass" src="./Images/AuthorProfile.png" alt="Author Image " title="Author" height="110px" width="110px"></img>
+        <br><br>
+         <h4 class="h4" style="text-indent:10%;">Vignesh Chinnasamy</h4>
+        <h6 class="h6" style="text-indent:10%;">@Viknesh7013</h6>
+        <br>
+        <button class="btn btn-primary btn-lg " onclick="followers()" style="margin-left:27%;"><span id="Followbtn">Follow </span>&nbsp;<i class="fa-solid fa-user-plus"></i></button>
+        <ul class="nav social" style="margin-left:20%;">
+            <li class="nav-item"><a class="nav-link" href=""><i class="fa-brands fa-facebook con" style="color:blue;"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/vignesh-chinnasamy/"><i class="fab fa-linkedin-in"  style="color:blue;"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href=""><i class="fab fa-google con"  style="color:red;"></i></a></li>
+            </ul>
+            <br>
+        <hr>
+        <p style="text-indent:20%;"><i class="fa-solid fa-notes-medical" style="margin-right:5%;"></i> <span class="h5" style="text-indent:5%;">Posts </span> &nbsp; - &nbsp;  <b>310</b> </p>
+        <p style="text-indent:20%;"><i class="fa-solid fa-users" style="margin-right:5%;"></i> <span class="h5" style="text-indent:5%;">Followers </span> &nbsp; - &nbsp;  <b id="follower">489</b> </p>
+        <p style="text-indent:20%;"><i class="fa-solid fa-user-plus" style="margin-right:5%;"></i> <span class="h5" style="text-indent:5%;">Following </span> &nbsp; - &nbsp;  <b>83</b> </p>
+        <p style="text-indent:20%;"><i class="fa-regular fa-thumbs-up" style="margin-right:5%;"></i> <span class="h5" style="text-indent:5%;">Likes </span> &nbsp; - &nbsp;  <b>533</b> </p>
+        <p style="text-indent:20%;"><i class="fa-regular fa-thumbs-down" style="margin-right:5%;"></i> <span class="h5" style="text-indent:5%;">Dislikes </span> &nbsp; - &nbsp;  <b>15</b> </p>
+
+        <br>
+        <hr>
+        <p class="h6" style="text-align:center;font-size:16px;"><i class="fa-regular fa-copyright"></i> Eye of Hawk .</p><br>
+        <button class="btn btn-primary disabled" style="margin-left:20%"> Total Visitor  - &nbsp; <span id="visit"> </span></button>
+    </div>
+    <div class="container right" style="height:50vmax;width:100%;">
+    
+       <ul class="nav navi">
+        <li class="nav-item"> <a class="nav-link" href="./index.html">Home </a></li>
+        <li class="nav-item"> <a class="nav-link" href="./Industry4.0.html">Technology </a></li>
+        <li class="nav-item"> <a class="nav-link" href="./Evolution.html">Evolution </a></li>
+        <li class="nav-item"> <a class="nav-link" href="./Trends.html">Trends </a></li>
+        <li class="nav-item"> <a class="nav-link" href="./FAQs.html">FAQs </a></li>
+       </ul>
+       
+       <br>
+    <div class="card" >
+        <h4 class="card-header"> 1. How does Industry 4.0 contribute to product customization?</h4>
+       <p class="card-body" style="text-indent:5%;">Commonly referred to as 3D printing, additive manufacturing is the process of building an object by depositing material in multiple layers. The use of additive manufacturing has certainly become trendy, but it has yet to reach its full potential. Industry 4.0 provides the technological infrastructure for manufacturing enterprises to use 3D technology at scale, producing smaller numbers of more customized products. Because additive technology can be deployed on demand, production time for customized products is significantly reduced, resulting in shorter overall lead times and more accurate delivery timetables. 
+        An important hallmark of an Industry 4.0 enterprise, is the robust integration of additive manufacturing throughout the supply chain, not only to produce quality, individually-tailored products for end users, but also for the manufacturing of customized machine parts within the supply chain itself.</p>
+    </div><br>
+    <div class="card">
+        <h4 class="card-header">2. What does an integration of advanced analytics and Industry 4.0 look like?</h4>
+        <p class="card-body" style="text-indent:5%;">The implementation of advanced analytics consistently yields higher production quality, along with reduced downtime and improved customer experience — all contributing to a more specific, achievable bottom line. But these analytics are often disjointed or disparate, existing without a cohesive connection to an overarching structure or system of analysis and review. As the manufacturing world continues to evolve toward Industry 4.0, analytics systems are simultaneously evolving. The Industry 4.0 supply chain uses advanced analytics and Big Data to inform end-to-end (E2E) visibility. Up-to-the-minute data are available to support real-time decision-making and bring visibility to the entire supply chain, both within and without individual organizations. 
+            This not only results in a supply chain capable of greater responsiveness to disruption, but is also means manufacturing companies can gain greater insight into their overall supply situation.</p>
+       
+        </div><br>
+    <div class="card">
+        <h4 class="card-header">3. How does Industry 4.0 push beyond postmodern ERP?</h4>
+        <p class="card-body" style="text-indent:5%;">The postmodern ERP mindset has just begun to catch hold in the supply chain and manufacturing industry, yet Industry 4.0 pushes the boundaries of this cutting-edge approach even further. Industry 4.0 calls for a truly agile supply chain that integrates IT systems both vertically and horizontally. Using robust data-integration networks that span usually-disconnected departments like engineering and customer services, the Industry 4.0 company is much more cohesive and able to transcend communication and planning silos in a cross-organizational manner. 
+            And because these data systems can communicate beyond the boundaries of the company, they provide unprecedented integration, resulting in a much more agile supply chain.</p>
+
+    </div><br>
+
+    <div class="card">
+        
+        <h4 class="card-header">4. Is there an intersection between Industry 4.0 and The Internet of Things (IoT)?</h4>
+        <p class="card-body" style="text-indent:5%;">A holistic integration of Industry 4.0 requires the incorporation of networked machines and sensors throughout the supply chain. The Internet of Things (IoT) refers to computing technology embedded in devices, which can communicate with other devices and people through the internet. Currently IoT is most often found vertically within an organization; for instance, the supply chain's devices and sensors communicate with each other, providing useful but limited intelligence to the manufacturing control system. The next phase, however, incorporates the IoT to communicate across departments as well.
+            The Industry 4.0 supply chain fully leverages the IoT for streamlined, agile operations with far greater visibility and transparency.</p>
+        
+    </div><br>
+
+    <div class="card">
+        <h4 class="card-header">5. Does Industry 4.0 mean an increased reliance of cloud technology?</h4>
+        <p class="card-body" style="text-indent:5%;">The Industry 4.0 supply chain is a data-generation machine. It's constantly producing insights in real time, requiring incredible speed and precision, not to mention the capacity for instant access and E2E visibility. Those demands are best met in the Cloud. As Cloud technology continues to improve, the Industry 4.0 enterprise will increasingly deploy it for data management and functionality. Coupled with seemingly endless storage capacity and an ever-shortening reaction time, the Cloud offers the necessary agility for the supply chain of the next generation.
+            Cloud technology, with its centralized data inputs and sources, allows for increased communication and collaboration across a number of critical stages: procurement, planning, production, and transportation</p>
+        
+    </div>
+
+ </div>
+
+    </div></div>
+</div>
+</body>
+</html>

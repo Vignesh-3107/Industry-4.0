@@ -1,0 +1,36 @@
+.header{
+    margin:2% 30% 2%  37%;
+}
+.header h2{
+    padding-top:25px;
+}
+.main{
+    display:grid;
+    width:100%;
+    grid-template-columns: 25% 75%;
+}
+
+.navi li{
+    color:chocolate;
+    padding:5% 1%;
+    font-size:large;
+    text-justify:center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navi li   :hover{
+    background-color:chocolate; color:white; 
+    font-size: larger;
+}
+.navi a{color:chocolate;}
+.imgclass{
+    margin-left: 30%;
+    margin-top:10%;
+
+}
+.social  :hover{
+    background-color:rgba(255, 255, 255, 0);
+    font-size: larger; 
+}
+.social{
+    font-size: 30px;
+}

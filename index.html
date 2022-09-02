@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./index.css" >
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="./index.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <title>Eye of Hawk</title>
+   
+</head>
+<body onload="visitLoading()"><div class="container">
+    <div class="header">
+    <img src="./Images/EyeOfHawk.png" alt="Eye Of Hawk" height="100px" width="100px" title="Eye of Hawk" style="float:left;" ></img>
+    <h2 class="h2">Eye of Hawk</h2>
+    </div>
+    <div>
+    <h3 class="h3" style="font-size:30px;color:red;">Industry 4.0</h3>
+    <div class="container main">
+    <div class="container left" style="height:53vmax;width:100%;background-color: rgba(156, 156, 156, 0.455) ;">
+         <img class="img rounded-circle bg-white imgclass" src="./Images/AuthorProfile.png" alt="Author Image " title="Author" height="110px" width="110px"></img>
+        <br><br>
+         <h4 class="h4" style="text-indent:10%;">Vignesh Chinnasamy</h4>
+        <h6 class="h6" style="text-indent:10%;">@Viknesh7013</h6>
+        <br>
+        <button class="btn btn-primary btn-lg " onclick="followers()" style="margin-left:27%;"><span id="Followbtn">Follow </span>&nbsp;<i class="fa-solid fa-user-plus"></i></button>
+        <ul class="nav social" style="margin-left:20%;">
+            <li class="nav-item"><a class="nav-link" href=""><i class="fa-brands fa-facebook con" style="color:blue;"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/vignesh-chinnasamy/"><i class="fab fa-linkedin-in"  style="color:blue;"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href=""><i class="fab fa-google con"  style="color:red;"></i></a></li>
+            </ul>
+            <br>
+        <hr>
+        <p style="text-indent:20%;"><i class="fa-solid fa-notes-medical" style="margin-right:5%;"></i> <span class="h5" style="text-indent:5%;">Posts </span> &nbsp; - &nbsp;  <b>310</b> </p>
+        <p style="text-indent:20%;"><i class="fa-solid fa-users" style="margin-right:5%;"></i> <span class="h5" style="text-indent:5%;">Followers </span> &nbsp; - &nbsp;  <b id="follower">489</b> </p>
+        <p style="text-indent:20%;"><i class="fa-solid fa-user-plus" style="margin-right:5%;"></i> <span class="h5" style="text-indent:5%;">Following </span> &nbsp; - &nbsp;  <b>83</b> </p>
+        <p style="text-indent:20%;"><i class="fa-regular fa-thumbs-up" style="margin-right:5%;"></i> <span class="h5" style="text-indent:5%;">Likes </span> &nbsp; - &nbsp;  <b>533</b> </p>
+        <p style="text-indent:20%;"><i class="fa-regular fa-thumbs-down" style="margin-right:5%;"></i> <span class="h5" style="text-indent:5%;">Dislikes </span> &nbsp; - &nbsp;  <b>15</b> </p>
+
+        <br>
+        <hr>
+        <p class="h6" style="text-align:center;font-size:16px;"><i class="fa-regular fa-copyright"></i> Eye of Hawk .</p><br>
+        <button class="btn btn-primary disabled" style="margin-left:20%"> Total Visitor  - &nbsp; <span id="visit"> </span></button>
+    </div>
+    <div class="container right" style="height:50vmax;width:100%;">
+    
+       <ul class="nav navi">
+        <li class="nav-item"> <a class="nav-link" href="./index.html">Home </a></li>
+        <li class="nav-item"> <a class="nav-link disabled" href="./Industry4.0.html">Technology </a></li>
+        <li class="nav-item"> <a class="nav-link disabled" href="./Evolution.html">Evolution </a></li>
+        <li class="nav-item"> <a class="nav-link disabled" href="./Trends.html">Trends </a></li>
+        <li class="nav-item"> <a class="nav-link disabled" href="./FAQs.html">FAQs </a></li>
+       </ul>
+       <br><br>
+       <p style="text-indent:7.5%;margin-left: 2.5%;"> Industry 4.0, which revolutionizes the automation, monitoring, and analysis of supply chains through smart technology. 
+        Industry 4.0 is powered by the Industrial Internet of Things (IIoT) and cyber-physical systems – smart, autonomous systems that use computer-based algorithms to monitor and control physical things like machinery, robots, and vehicles. 
+        Industry 4.0 makes everything in your supply chain “smart” – from smart manufacturing and factories to smart warehousing and logistics. But Industry 4.0 doesn’t stop at the supply chain. It inter-connects with back-end systems, like enterprise resource planning (ERP), to give companies an unprecedented level of visibility and control.
+        Ultimately, Industry 4.0 is a major part of any company’s digital transformation. </p>
+        <br><br><br><br>
+        <p style="text-align:center;">__________________________________________ &nbsp;<i class="fa-solid fa-lock"></i> &nbsp;__________________________________________ </p>
+         <button class="btn btn-primary" onclick="visitor()" style="margin-left:40%;"> Continue to Reading </button>
+         <br><br><br><br><br>
+         
+    </div>
+
+    </div></div>
+</div>
+</body>
+</html>
