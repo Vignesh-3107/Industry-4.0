@@ -1,43 +1,49 @@
-var Counter=3107;
+const button = document.getElementById("Followbtn");
 function visitor(){
     if (typeof(Storage) !== "undefined") {
-    if (sessionStorage.clickcount) {
-        sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
       } else {
-        sessionStorage.clickcount = 3701;
+        localStorage.clickcount = 3701;
       }
-      document.getElementById("visit").innerHTML =  sessionStorage.clickcount;
+      document.getElementById("visit").innerHTML =  localStorage.clickcount;
     } 
     else{
-        document.getElementById("visit").innerHTML = Counter;
+        document.getElementById("visit").innerHTML = 3701;
     }
     location.href="./Industry4.0.html";
    
 }
-function visitLoading(){
-    
-    document.getElementById("visit").innerHTML = sessionStorage.clickcount;
-    document.getElementById("follower").innerHTML = sessionStorage.count;
-    document.getElementById("Followbtn").innerHTML = sessionStorage.text;
-}
-var Follower=489;
 
+function visitLoading(){
+    if(localStorage.clicked == 1){
+      localStorage.text="Following ";}
+    else{ localStorage.text="Follow ";}
+    document.getElementById("visit").innerHTML = localStorage.clickcount;
+    document.getElementById("follower").innerHTML = localStorage.count;
+    document.getElementById("Followbtn").innerHTML = localStorage.text;
+}
+var counter = 0;
 function followers(){
-    // sessionStorage.text="Follow "/;
-    document.getElementById("Followbtn").disabled = true;
-    if (typeof(Storage) !== "undefined") {
-        if (sessionStorage.count) {
-            sessionStorage.count = Number(sessionStorage.count)+1;
-          } else {
-            sessionStorage.count = Follower;
-          }
-          document.getElementById("follower").innerHTML =  sessionStorage.count;
-          document.getElementById("Followbtn").innerHTML = "Following  ";
-          sessionStorage.text="Following ";
-          
-        } 
-        else{
-            document.getElementById("follower").innerHTML = 489;
-            sessionStorage.text="Follow ";
-        }
+  if(counter >= 1){
+    button.disabled= true;
+  }
+  if (typeof(Storage) !== "undefined") {
+  if (localStorage.count) {
+    localStorage.count = Number(localStorage.count)+1;
+    } else {
+      localStorage.count = 489;
+      localStorage.clicked=0;
+    }
+    document.getElementById("follower").innerHTML =  localStorage.count;
+    localStorage.text="Following ";
+    localStorage.clicked = 1;
+    counter++;
+    document.getElementById("Followbtn").innerHTML = "Following  ";
+  } 
+  else{
+      localStorage.clicked = 0;
+      document.getElementById("follower").innerHTML = 489;
+      document.getElementById("Followbtn").innerHTML = "Follow  ";
+  }
 }
